@@ -1,70 +1,72 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="css/reset.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/fonts.css">
-	<title>HTML template</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>კონტაქტი</title>
+    <link rel="stylesheet" href="styles/fonts.css">
+    <link rel="stylesheet" href="styles/contact.css">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
+
 <body>
-	<div class="container">
-		<header>
-			<a class="logo" href="index.html">
-				<img class="logo" src="img/logo.svg">
-			</a>
-			<nav class="navigation">
-				<ul class="navigation-ul">
-					<li class="navigation-li">
-						<a class="navigation-a" href="index.html">მთავარი</a>
-					</li>				
-					<li class="navigation-li">
-						<a class="navigation-a" href="#">სიახლეები</a>
-					</li>			
-						<li class="navigation-li">
-						<a class="navigation-a active" href="contact.html">კონტაქტი</a>
-					</li>	
-				</ul>
-			</nav>
-		</header>
-		<section class="text-container">
-			<h1 class="title">საკონტაქტო ინფორმაცია:</h1>
-			<ul class="contact-ul">
-				<li class="contact-li">
-					<span>მისამართი:</span>
-					პეტრიაშვილის ქ. 30
-				</li>	
-				<li class="contact-li">
-					<span>ტელ:</span>
-					+995 32 222 222
-				</li>	
-				<li class="contact-li">
-					<span>ელ. ფოსტა:</span>
-					mail@gmail.com
-				</li>
-			</ul>
-			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2978.153260999664!2d44.78041021502!3d41.71721158344687!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x404472d599171aa3%3A0x3232187e87194a25!2z4YOb4YOU4YOg4YOQ4YORIOGDkOGDmuGDlOGDpeGDoeGDmOGDq-GDmOGDoSDhg6Xhg6Phg6nhg5AsIOGDl-GDkeGDmOGDmuGDmOGDoeGDmA!5e0!3m2!1ska!2sge!4v1676830535062!5m2!1ska!2sge" width="900" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-		</section>
-		<footer class="footer">
-			<ul class="social-ul">
-				<li class="social-li">
-					<a class="social-a" href="https://www.facebook.com/">
-						<img class="social-img" src="img/facebook.svg">
-					</a>
-				</li>
-
-				<li class="divider"></li>
-
-				<li class="social-li">
-					<a class="social-a" href="https://www.youtube.com/">
-						<img class="social-img" src="img/youtube.svg">
-					</a>
-					
-				</li>
-			</ul>
-
-</footer>
-</div>
+    <header class="d-flex">
+        <div class="container d-flex">
+            <a href="#">
+                <img class="logo" src="assets/img/reddit.svg" alt="logo">
+            </a>
+        <nav class="d-flex">
+            <div>
+            <a href="/index.html">მთავარი</a>
+            <a href="/help.html">დახმარება</a>
+            <a href="/blog-detail.html">ბლოგი</a>
+            <a href="#">წესები</a>
+            <a href="/contact.html">კონტაქტი</a>
+            </div>
+            <div>
+                <a href="/registration.html">რეგისტრაცია</a>
+                <a href="/auth.html">შესვლა</a>
+            </div>
+        </nav>
+    </div>
+    </header>
+    <div class="container contact">
+        <div>
+            <h1>კონტაქტის ფორმა</h1>
+            <p>შეავსეთ ქვემოთ მოცემული ველები და დააჭირე გაგზავნის ღილაკს</p>
+            <form action="">
+            <div class="form-group">
+                <label for="email">ელ-ფოსტა</label>
+                <input type="email" id="email">
+            </div>
+            <div class="form-group">
+                <label for="subject">თემა</label>
+                <input type="text" id="subject">
+            </div>
+            <div class="form-group">
+                <label for="subject">შეტყობინება</label>
+                <textarea name="" id="message" rows="5"></textarea>
+            </div>
+            <button type="submit">გაგზავნა</button>
+            </form>
+        </div>
+        <div>
+            <h2>საკონტაქტო ინფორმაცია</h2>
+            <ul>
+                <li><strong>ფეისბუქი:</strong> <a href="#">admin user</a></li>
+                <li><strong>მისამართი:</strong> ქ.თბილისი რუსთაველის #1</li>
+                <li><strong>ელ-ფოსტა:</strong> admin@web</li>
+                <li><strong>ტელეფონი:</strong> 111 11 11 11</li>
+            </ul>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum consequatur sit facilis blanditiis, laborum dicta iusto non, adipisci quam deserunt temporibus? Aperiam molestiae, tempora aut quidem odit hic reiciendis ex.</p>
+        </div>
+    </footer>
 </body>
+
 </html>

@@ -1,73 +1,174 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="css/reset.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/fonts.css">
-	<title>HTML template</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>მთავარი</title>
+    <link rel="stylesheet" href="styles/card.css">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
+
 <body>
-	<div class="container">
-		<header>
-			<a href="index.html">
-				<img class="logo" src="img/logo.svg">
-			</a>
-			<nav class="navigation">
-				<ul class="navigation-ul">
-					<li class="navigation-li">
-						<a class="navigation-a active" href="index.html">მთავარი</a>
-					</li>				
-					<li class="navigation-li">
-						<a class="navigation-a" href="#">სიახლეები</a>
-					</li>			
-						<li class="navigation-li">
-						<a class="navigation-a" href="contact.html">კონტაქტი</a>
-					</li>	
-				</ul>
-			</nav>
-		</header>
-		<section class="banner-section">
-		<img src="img/banner.svg">
-		</section>
-		<div class="wrapper">
-			<h4 class="title-h4"><span>Featured</span> view all featured media</h4>
-			<div class="wrapper-box">
-				<div class="box">
-					<h5 class="title-h5">Responsive Web Design</h5>
-					<img class="icon" src="img/image1.svg">
-					<p class="text">
-						approach that suggests that design and development should respond to the user's behavior and environment based on screen size, platform and orientation.
-					</p>
-				</div>
-				<div class="box">
-					<h5 class="title-h5">App Development</h5>
-					<img class="icon" src="img/image2.svg">
-					<p class="text">
-						Mobile application development is the process of making or creating a mobile application to run on various mobile platforms. A mobile platform is a mobile operating system.
-					</p>
-				</div>
-			</div>
-		</div>
-		<footer class="footer">
-			<ul class="social-ul">
-				<li class="social-li">
-					<a class="social-a" href="https://www.facebook.com/">
-						<img class="social-img" src="img/facebook.svg">
-					</a>
-				</li>
-
-				<li class="divider"></li>
-
-				<li class="social-li">
-					<a class="social-a" href="https://www.youtube.com/">
-						<img class="social-img" src="img/youtube.svg">
-					</a>
-					
-				</li>
-			</ul>
-</footer>
-</div>
+    <header class="d-flex">
+        <div class="container d-flex">
+            <a href="#">
+                <img class="logo" src="assets/img/reddit.svg" alt="logo">
+            </a>
+        <nav class="d-flex">
+            <div>
+            <a href="/index.html">მთავარი</a>
+            <a href="/help.html">დახმარება</a>
+            <a href="/blog-detail.html">ბლოგი</a>
+            <a href="#">წესები</a>
+            <a href="/contact.html">კონტაქტი</a>
+            </div>
+            <div>
+                <a href="/registration.html">რეგისტრაცია</a>
+                <a href="/auth.html">შესვლა</a>
+            </div>
+        </nav>
+    </div>
+    </header>
+    <div class="container body-container blog-main-container">
+    <a class="main-category-item">
+        <img src="/assets/icons/globe-solid.svg" alt="icon description">
+        <h3>მსოფლიო</h3>
+    </a>
+    <a class="main-category-item">
+        <img src="assets/icons/users-solid.svg" alt="icon description">
+        <h3>კულტურა</h3>
+    </a> 
+    <a class="main-category-item">
+        <img src="assets/icons/futbol-solid.svg" alt="icon description">
+        <h3>სპორტი</h3>
+    </a>
+    <a class="main-category-item">
+        <img src="assets/icons/palette-solid.svg" alt="icon description">
+        <h3>ხელოვნება</h3>
+    </a>
+    <ul class="category-navigation-list">
+        <li><a class="d-block" href="#">პოლიტიკა</a></li>
+        <li><a class="d-block" href="#">ავტო</a></li>
+        <li><a class="d-block" href="#">ბუნება</a></li>
+        <li><a class="d-block" href="#">კოსმოსი</a></li>
+        <li><a class="d-block" href="#">რელიგია</a></li>
+        <li><a class="d-block" href="#">პოლიტიკა</a></li>
+        <li><a class="d-block" href="#">ავტო</a></li>
+        <li><a class="d-block" href="#">ბუნება</a></li>
+        <li><a class="d-block" href="#">კოსმოსი</a></li>
+        <li><a class="d-block" href="#">რელიგია</a></li>
+    </ul>
+    <div class="blog-container">
+        <div class="card">
+            <div class="img-container">
+                <img class="card-img" src="./assets/img/obi-pixel7propix-UEQvUtRs224-unsplash.jpg" alt="ჩვენი პირველი სტატია">
+                <img class="fav-img" src="./assets/icons/heart-regular.svg" alt="ფავორიტებში დამატების იქონი"> 
+                <span>12/01/2022</span>
+            </div>
+             <div class="card-body">
+            <h3>სტატიის ჩვენებური სათაური</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum consequatur sit facilis blanditiis,Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum consequatur sit facilis blanditiis,Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum consequatur sit facilis blanditiis,Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum consequatur sit facilis blanditiis,Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum consequatur sit facilis blanditiis,</p>
+            <div class="action-container">
+                <button class="btn">მეტი...</button>
+                <div>
+                    <img src="./assets/icons/share-nodes-solid.svg" alt="გაზიარება">
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="img-container">
+                <img class="card-img" src="./assets/img/obi-pixel7propix-UEQvUtRs224-unsplash.jpg" alt="ჩვენი პირველი სტატია">
+                <img class="fav-img" src="./assets/icons/heart-regular.svg" alt="ფავორიტებში დამატების იქონი"> 
+                <span>12/01/2022</span>
+            </div>
+             <div class="card-body">
+            <h3>სტატიის ჩვენებური სათაური</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum consequatur sit facilis blanditiis,Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum consequatur sit facilis blanditiis,Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum consequatur sit facilis blanditiis,Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum consequatur sit facilis blanditiis,Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum consequatur sit facilis blanditiis,</p>
+            <div class="action-container">
+                <button class="btn">მეტი...</button>
+                <div>
+                    <img src="./assets/icons/share-nodes-solid.svg" alt="გაზიარება">
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="img-container">
+                <img class="card-img" src="./assets/img/obi-pixel7propix-UEQvUtRs224-unsplash.jpg" alt="ჩვენი პირველი სტატია">
+                <img class="fav-img" src="./assets/icons/heart-regular.svg" alt="ფავორიტებში დამატების იქონი"> 
+                <span>12/01/2022</span>
+            </div>
+             <div class="card-body">
+            <h3>სტატიის ჩვენებური სათაური</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum consequatur sit facilis blanditiis,Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum consequatur sit facilis blanditiis,Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum consequatur sit facilis blanditiis,Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum consequatur sit facilis blanditiis,Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum consequatur sit facilis blanditiis,</p>
+            <div class="action-container">
+                <button class="btn">მეტი...</button>
+                <div>
+                    <img src="./assets/icons/share-nodes-solid.svg" alt="გაზიარება">
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="img-container">
+                <img class="card-img" src="./assets/img/obi-pixel7propix-UEQvUtRs224-unsplash.jpg" alt="ჩვენი პირველი სტატია">
+                <img class="fav-img" src="./assets/icons/heart-regular.svg" alt="ფავორიტებში დამატების იქონი"> 
+                <span>12/01/2022</span>
+            </div>
+             <div class="card-body">
+            <h3>სტატიის ჩვენებური სათაური</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum consequatur sit facilis blanditiis,Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum consequatur sit facilis blanditiis,Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum consequatur sit facilis blanditiis,Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum consequatur sit facilis blanditiis,Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum consequatur sit facilis blanditiis,</p>
+            <div class="action-container">
+                <button class="btn">მეტი...</button>
+                <div>
+                    <img src="./assets/icons/share-nodes-solid.svg" alt="გაზიარება">
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="img-container">
+                <img class="card-img" src="./assets/img/obi-pixel7propix-UEQvUtRs224-unsplash.jpg" alt="ჩვენი პირველი სტატია">
+                <img class="fav-img" src="./assets/icons/heart-regular.svg" alt="ფავორიტებში დამატების იქონი"> 
+                <span>12/01/2022</span>
+            </div>
+             <div class="card-body">
+            <h3>სტატიის ჩვენებური სათაური</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum consequatur sit facilis blanditiis,Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum consequatur sit facilis blanditiis,Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum consequatur sit facilis blanditiis,Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum consequatur sit facilis blanditiis,Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum consequatur sit facilis blanditiis,</p>
+            <div class="action-container">
+                <button class="btn">მეტი...</button>
+                <div>
+                    <img src="./assets/icons/share-nodes-solid.svg" alt="გაზიარება">
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="img-container">
+                <img class="card-img" src="./assets/img/obi-pixel7propix-UEQvUtRs224-unsplash.jpg" alt="ჩვენი პირველი სტატია">
+                <img class="fav-img" src="./assets/icons/heart-regular.svg" alt="ფავორიტებში დამატების იქონი"> 
+                <span>12/01/2022</span>
+            </div>
+             <div class="card-body">
+            <h3>სტატიის ჩვენებური სათაური</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum consequatur sit facilis blanditiis,Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum consequatur sit facilis blanditiis,Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum consequatur sit facilis blanditiis,Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum consequatur sit facilis blanditiis,Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum consequatur sit facilis blanditiis,</p>
+            <div class="action-container">
+                <button class="btn">მეტი...</button>
+                <div>
+                    <img src="./assets/icons/share-nodes-solid.svg" alt="გაზიარება">
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+<footer>
+        <div class="container">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum consequatur sit facilis blanditiis, laborum dicta iusto non, adipisci quam deserunt temporibus? Aperiam molestiae, tempora aut quidem odit hic reiciendis ex.</p>
+        </div>
+    </footer>
 </body>
+
 </html>
